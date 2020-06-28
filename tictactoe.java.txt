@@ -1,0 +1,109 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication7;
+
+import java.awt.*;
+import java.awt.event.*;
+/**
+ *
+ * @author c167128
+ */
+class MyLabel extends Label implements MouseListener {
+   String s;Disp obj;
+    MyLabel(Disp d){
+    setText("");
+    this.setBackground(Color.GRAY);
+   this.obj=d;
+   this.addMouseListener(this);
+   this.setFont( new Font("Courier", Font.BOLD,200));
+    }
+            @Override
+            public void mouseClicked(MouseEvent e) {
+            //To change body of generated methods, choose Tools | Templates.
+            
+             s=this.getText();
+            if(s.isEmpty()){
+                if(obj.count%2==0)
+                {
+                 obj.count++;
+                    setText(" X");
+                    setBackground(Color.RED);
+                }
+                else
+                {
+                    obj.count++;
+                    setText(" O");
+                    setBackground(Color.BLUE);
+                }
+           obj.verify();
+            }
+            
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                 //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+               // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+               // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+            
+        
+ }
+class Disp extends Frame{
+   MyLabel l[]=new MyLabel[9];
+   int count=0;
+    Disp(){
+        for(int i=0;i<9;i++)
+            l[i]=new MyLabel(this);
+    }
+    public void makfr(){
+        this.setLayout(new GridLayout(3,3,2,2));
+        for(int i=0;i<9;i++){
+            add(l[i]);
+        }
+      addWindowListener(new WindowAdapter(){
+      
+      public void windowClosing(WindowEvent e){
+         dispose();
+      }
+      });
+        setSize(1000,1000);
+        setTitle("TIC-TAC-TOE GAME");
+        setVisible(true);
+    
+    }
+    public void verify(){
+        if(l[0].)
+    }
+}
+
+
+
+public class JavaApplication7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    Disp obj=new Disp();
+    obj.makfr();
+    }
+    
+}
