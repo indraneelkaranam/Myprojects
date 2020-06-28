@@ -1,0 +1,10 @@
+{'ownerid':'mani@gmail.com','bikeid':'bike1',
+
+schedule:[{'start':'06-04-2018','end':'06-05-2018','userid':'xyz'},
+		{'start':'date','end':'date','userid':''}];
+}
+
+
+bike schedule collection ^
+                         |
+

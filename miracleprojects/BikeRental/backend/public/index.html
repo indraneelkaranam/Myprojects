@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Image Demo</title>
+<script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2//angular-route.min.js"></script>
+<script src="main.js"></script>
+</head>
+
+<body  ng-app="mainApp" ng-controller="imageCtrl">
+
+<div>
+<form action="http://localhost:3000/userreg" method="post" enctype="multipart/form-data" >
+<input type="text" name="name" id="name"  placeholder="User Name">
+<input type="file" name="userreg" id="userreg"><br>
+<button type="submit" value="submit">Submit</button>
+</form>
+</div>
+
+<div>
+<input type="text" ng-model="name" placeholder="User Name">
+<button ng-click="getimage()">GET Image</button>
+<div ng-show="image">
+<div ng-repeat="y in image">
+<img width="20%" height="20%" ng-src="/uploads/{{y.image}}" />
+</div>
+</div>
+</div>
+
+</body>
+
+
+</html>

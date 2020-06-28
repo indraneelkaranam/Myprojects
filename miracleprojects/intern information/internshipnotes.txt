@@ -1,0 +1,227 @@
+for javascript only brouser is enough... for programming language we need compiler and executing file
+
+js can be used fr server side too
+
+JAVASCRIPT:
+
+js is object "based" programming language,validation language and responsive language
+it gives dynamic nature to html
+
+"based" means no chance to define classes ... we can only use predefined classes
+
+browser takes entire responsibility of executing a js file
+
+overloading is not possible in js
+
+if we pass more(undefined values) or less paramaters(default values) in a function..
+but execution will be done
+
+jason is an added advantage if it is used both at front end and back end... nosql is based on 
+jason objects(ie if same jason is used at all 3 levels.. perfomance will be increased
+
+learn about mean stack
+
+NODEJS:
+
+we can develop web applications
+
+call back functions,single threads,eventloops,non blocking,asynchronous.. since 
+
+it acts as sever.. it reduces burden on cpu
+
+we save these files with .js
+
+lamp to mean
+
+lamp : linux(server on which u r running) apache(web server) mysql(database) php(a backend language)(a complete application can be developed from these)
+
+html css js frameworks like js(angular ember) sql (database) 
+
+full statck javascript???
+
+mean : 
+
+MongoDB (database)
+
+ExpressJs (web Framework)
+
+AngularJs (Front end development)
+
+NodeJs (server platform(it acts like a server))
+
+and it uses json for transfer of data
+
+mean stack advantages
+ allow to create real time experiences that are isomorphic in nature
+
+in nodejs which programme execute frsr.. its output is frst.. (java function example)
+(call back functions)
+
+it is a single threaded event model
+
+advantages of nodejs over java
+
+1)call back functions(non blocking functions)
+2)node package manager(NPM)
+
+npm is a command line package manager that allow developers to manage their 
+application dependies
+
+**it is used to install modules which are required for application such as express mongoose abd browserify
+
+**require() is used to access installed modules in our server-side applications
+
+**npm install -g<module name> is used to install modules globally
+
+we will use node command prompmt
+
+application details are present in package.json(automatically will be updated here)
+(type npm init for it in command prompt)
+
+Nodejs must be run from a file...(.js file)
+
+Read-Eval-Print-Loop(everry programme can have a separate port number)
+
+Single Thread has Events and Each event has Event Handlers
+
+Event emitters -> Events -> Event Handlers
+
+Synchronous : thread waits during i/o operation
+
+asynchronous : thread doesnt wait fr input output operations
+
+NodeJs is a server(it is a non blocking server) means it puts all the requests in a 
+"event loop" and which one is executable faster... will be executed frst...
+
+call back  function means it nevr waits...
+
+whenevrr a request enters a event loop... it registers a call back and the requests goes into loop again
+
+console.log("Welcome"); (save with .js)
+
+run it with c:\\nodejs>>node name
+
+if a app needs to run in a browser... we need a domain name... we use port number fr it..
+
+it means we need to create a server..
+
+GET AND POST (if we use get... data is sent through url.. else it is sent through body)
+
+learn about get and post.. and read file and read file sync
+
+we use body parts to use POST... here body parts acts as a mediator
+
+npm install express -g --save (saves it in json.package)
+
+express contains sessions..(logout sessions)
+
+
+MONGODB : (NOSQL)
+
+it scales horizantally
+
+coloumn based eg: memcached,redis,riak
+
+keyvalue eg: Cassandra and Hbase
+
+graph :Neo4j and infoGrid
+
+document eg:MongoDb and CouchDb
+
+Main Features of Mongodbs
+
+1.Ad-Hoc Queries(1 operations 2 commands or 2 operations one command)
+2.Indexing
+3.Replication
+4.Sharding
+5.File storage
+6.Capped Collections()
+
+some queries
+
+show dbs
+
+show databases
+
+use [databasename]
+
+db.createCollections('mss');
+
+db.mss.insert({firstname:"indra",lastname:"hello"});
+
+show collections
+
+db.mss.find().pretty();
+
+db.mss.update({"firstname":"teja"},{"firstname":"teja","lastname": "xyz"});
+
+db.mss.remove({"firstname":"teja"});
+
+c drive-> data-> db for installing mongodb
+
+ExpressJs :
+
+we can directly interact with database,database application
+
+we can develop our own apis
+
+we can do routing(jumping from one file to anothher page)
+
+we can develop our own routes
+
+middle ware acts as mediator
+
+express acts as middle ware
+
+express is a minimal framework for node js
+
+use of template engines
+
+we can do error handling here
+
+all these cannot be sololy done by using nodejs
+
+for express folder generation u need to install express-generator globally
+
+for creating folder structure
+
+express folder_name
+
+res.render is used for jade(advance of html);
+
+ /github/mani3202
+
+task
+roll no
+password encrption
+
+1>sign up
+2>Login
+3>Get student details
+4>3 apis
+
+Type Script:
+
+it is a super set of javascript
+
+type script is object oriented javascript
+
+online practice for type script
+
+http://fiddlesalad.com/typescript/
+
+AngularJs
+
+it is a javascript framework
+
+it is used fro front end development
+
+npm install -g @angular/cli
+
+ng new my-dream-app
+
+cd my-dream-app
+
+ng serve
+
+             

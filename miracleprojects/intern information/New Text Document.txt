@@ -1,0 +1,12 @@
+for javascript only brouser is enough... for programming language we need compiler and executing file
+
+js can be used fr server side too
+
+js is object "based" programming language
+
+"based" means no chance to define classes ... we can only use predefined classes
+
+browser takes entire responsibility of executing a js file
+
+ 
+

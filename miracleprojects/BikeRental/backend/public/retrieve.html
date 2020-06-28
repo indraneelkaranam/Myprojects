@@ -1,0 +1,11 @@
+<div ng-controller="retrieveCtrl">
+
+<input type="text" ng-model="name" placeholder="User Name">
+<button ng-click="getimage()">GET Image</button>
+<div ng-show="image">
+<div ng-repeat="y in image">
+<img ng-src="/uploads/{{y.image}}" />
+</div>
+</div>
+
+</div>

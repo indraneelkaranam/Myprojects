@@ -1,0 +1,3 @@
+wats the use in returning json objects instead of returning html or plain objects
+
+y we use express if we can use node for server response??

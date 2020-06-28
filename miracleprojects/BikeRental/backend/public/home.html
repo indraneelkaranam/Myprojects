@@ -1,0 +1,17 @@
+<div ng-controller="imageCtrl">
+
+<form action="http://localhost:7000/userreg" method="post" enctype="multipart/form-data" >
+<input type="text" name="name" id="name"  placeholder="User Name">
+<input type="file" name="userreg" id="userreg"><br>
+<button type="submit" value="submit">Submit</button>
+</form>
+
+<div>
+<input type="text" ng-model="name" placeholder="User Name">
+<button ng-click="getimage()">Retrieve Image</button>
+<div ng-show="image" ng-repeat="y in image">
+<img ng-src="/uploads/{{y.image}}" />
+</div>
+</div>
+
+</div>
